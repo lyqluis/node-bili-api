@@ -1,3 +1,6 @@
 {
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+  "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500
+  }
 }
