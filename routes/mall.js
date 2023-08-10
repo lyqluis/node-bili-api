@@ -159,6 +159,25 @@ router.get('/mall/product', async ctx => {
   ctx.body = res.data
 })
 
+// ## 预估到手价
+router.get('/mall/product/price', async ctx => {
+  const { itemsId, skuId, num } = ctx.query
+
+  const res = await axios({
+    method: 'post',
+    url: 'https://mall.bilibili.com/mall-c-search/items/net/price',
+    data: {
+      itemsId: "10037058",
+      selectedSkuList: [
+        {
+          selectedSkuNum: 1,
+          skuId: 1000085606
+        }
+      ]
+    }
+  })
+  ctx.body = res.data
+})
 
 module.exports = router
 
