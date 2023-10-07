@@ -11,6 +11,7 @@
 	"license": "ISC",
 	"dependencies": {
 		"@koa/cors": "^4.0.0",
+		"@vercel/node": "^3.0.7",
 		"axios": "^1.4.0",
 		"cheerio": "1.0.0-rc.12",
 		"cookie": "^0.5.0",

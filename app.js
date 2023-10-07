@@ -1,7 +1,6 @@
 const Koa = require('koa')
 const app = new Koa()
 
-
 // cors
 const cors = require('@koa/cors')
 app.use(cors({
@@ -33,3 +32,5 @@ app.use(router.routes(), router.allowedMethods())
 
 app.listen(3003)
 console.log(`🚀 app is listening on localhost:3003`)
+
+module.exports = app.callback()
